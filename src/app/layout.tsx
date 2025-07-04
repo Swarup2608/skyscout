@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { inter, interTight } from '@/app/lib/font';
 import HeaderWrapper from './ui/Header/header'; // NEW component
-import { promotionData, promotionLink, SocialMediaLinks } from './lib/data';
+import { navItems, promotionData, promotionLink, SocialMediaLinks } from './lib/data';
 import Header from './ui/Header/header';
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export default function RootLayout({
           promotionData={promotionData}
           promotionLink={promotionLink}
           socialMediaList={SocialMediaLinks}
+          navItems={navItems}
         />
         {children}
       </body>

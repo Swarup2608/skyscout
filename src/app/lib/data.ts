@@ -33,3 +33,10 @@ export const SocialMediaLinks =[
     },
     
 ]
+
+export const navItems = [
+  { title: "Company", dropdown: ["Dropdown 1", "Dropdown 2"] },
+  { title: "Our Businesses", dropdown: ["Dropdown 1", "Dropdown 2", "Dropdown 3"] },
+  { title: "Innovation", dropdown: ["Dropdown 1", "Dropdown 2"] },
+  { title: "Sustainability", dropdown: ["Dropdown 1", "Dropdown 2", "Dropdown 3"] },
+];
