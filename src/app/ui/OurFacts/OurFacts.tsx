@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { SubTitle, Title } from "../Title/Title"
+import NumbersCards from "../NumbersCards/NumbersCards"
 
 type FactListType = {
     text: string,
@@ -31,6 +32,15 @@ export default function OurFacts(
                     <button className="mt-[20px] text-black bg-[#AEE656] px-[20px] py-[12px] flex items-center justify-center gap-[12px] rounded cursor-pointer hover:scale-105 transition-all duration-700">About Us <Image src='/svg/arrowRightBlack.svg' alt="Right Arrow" width={22} height={22} /></button>
                 </div>
 
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[60px] mt-[60px]">
+                {
+                    FactsList.map((facts,idx)=>(
+                        <div key={idx}>
+                            <NumbersCards PostText={facts.postText} Title={facts.title} description={facts.description} image="" isDark={true} isNumbers={true} text={facts.text} />
+                        </div>
+                    ))
+                }
             </div>
         </div>
     )

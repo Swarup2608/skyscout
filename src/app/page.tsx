@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Banner from "./ui/Banner/Banner";
-import { bannerItems, Facts, Strengths } from "./lib/data";
+import { bannerItems, difference, Facts, Strengths } from "./lib/data";
 import WhoWeAre from "./ui/WhoWeAre/WhoWeAre";
 import OurStrengths from "./ui/OurStrengths/OurStrengths";
 import OurFacts from "./ui/OurFacts/OurFacts";
+import Difference from "./ui/Difference/TheDifference";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <WhoWeAre />
       <OurStrengths strengthsList={Strengths} />
       <OurFacts FactsList={Facts} />
+      <Difference differenceList={difference} />
     </div>
   );
 }

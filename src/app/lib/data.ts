@@ -1,6 +1,3 @@
-import { link } from "fs";
-import { title } from "process";
-
 export const promotionData = 'Announcing SkyScout - Precision Farming Insights for Smarter Farming Decisions'
 export const promotionLink = '/ClickMe'
 
@@ -104,7 +101,7 @@ export const Strengths = [
 ]
 
 
-export const Facts =[
+export const Facts = [
     {
         text : "1.5",
         postText : "Million",
@@ -142,4 +139,47 @@ export const Facts =[
         description : "Landus is owned and operated by a network of 5,500 farmer-members."
     },
 
+]
+
+export const difference = [
+    {
+        image : 'Global.svg',
+        title : 'Global Influence',
+        descriription  : 'Landus is a $2.4B business serving over 5,500 farmers that impacts 34 states and 16 countries.'
+    },
+    {
+        image : 'Community.svg',
+        title : 'Community Efforts',
+        descriription : 'Landus is committed to the vitality of our rural communities, investing over $250,000 to date.',
+    },
+    {
+        image : 'DownStream.svg',
+        title : 'Downstream Driven',
+        descriription : 'Landus impacts the chain connecting the farmer with the consumer and grocery store shelves.',
+    },
+    {
+        image : 'Sustainability.svg',
+        title : 'Sustainability',
+        descriription  : 'Landus works across the supply chain to develop sustainable solutions positively impacting our planet.'
+    },
+    {
+        image : 'AcreDirect.svg',
+        title : 'AcreDirect',
+        descriription : "Landus' grain solutions provide farmers with access to market opportunities, maximizing their grain's value.",
+    },
+    {
+        image : 'LandusOne.svg',
+        title : 'LandusOne',
+        descriription  : "Landus' 24/7 virtual team of experts assists farmers in grain, agronomy, sustainability, and more."
+    },
+    {
+        image : 'Innovative.svg',
+        title : 'Innovation Connector',
+        descriription : 'This space in Des Moines, IA is a hub showcasing the latest ag tools, tech, and farming methods.',
+    },
+    {
+        image : 'AcreEdge.svg',
+        title : 'AcreEdge® Performance',
+        descriription : 'Manufactured by Landus, AcreEdge creates tailored programs fitting the needs of the Farmer of Tomorrow.',
+    },
 ]
