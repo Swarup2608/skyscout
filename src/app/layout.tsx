@@ -5,6 +5,7 @@ import { inter, interTight } from '@/app/lib/font';
 import HeaderWrapper from './ui/Header/header'; // NEW component
 import { navItems, promotionData, promotionLink, SocialMediaLinks } from './lib/data';
 import Header from './ui/Header/header';
+import Footer from './ui/Footer/Footer';
 
 export const metadata: Metadata = {
   title: 'Landus : SkyScout',
@@ -26,6 +27,7 @@ export default function RootLayout({
           navItems={navItems}
         />
         {children}
+        <Footer socialMediaList={SocialMediaLinks}/>
       </body>
     </html>
   );
