@@ -73,3 +73,31 @@ export const bannerItems = [
         image: 'banner4.png',
     },
 ]
+
+
+export const Strengths = [
+    {
+        title : 'Grain',
+        description : 'Landus connects farmers to diverse grain markets, offering global access, broad options, and operational support.',
+        image : 'Grain.jpg',
+        link : '/'
+    },
+    {
+        title : 'Agronomy',
+        description : 'Landus provides tailored agronomy solutions with advanced products, expert services, and personalized farm support.',
+        image : 'Agronomy.jpg',
+        link : '/'
+    },
+    {
+        title : 'Sustainability',
+        description : 'Sustainability at Landus is all about educating and supporting our 5,500 farmer-owners to make meaningful changes that will have a positive impact on the environment.',
+        image : 'Sustainability.jpg',
+        link : '/'
+    },
+    {
+        title : 'Soybean Crush',
+        description : 'Ralston Bean Processing uses advanced mechanical press technology to produce premium soybean meal and oil sustainably.',
+        image : 'SoyBean.jpg',
+        link : '/'
+    },
+]
