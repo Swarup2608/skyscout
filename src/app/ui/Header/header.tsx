@@ -29,7 +29,7 @@ function HeaderPromotion({
 }) {
   return (
     <div
-      className={`${isVisible ? "flex" : "hidden"} flex-row max-sm:flex-col items-center justify-center gap-2 bg-[#00304D] py-[10px] text-white`}
+      className={`${isVisible ? "flex" : "hidden"} flex-row max-sm:flex-col  items-center justify-center gap-2 bg-[#00304D] py-[10px] text-white`}
     >
       <p className="text-center text-sm sm:text-base">{promotionData}</p>
       <Link
@@ -150,7 +150,7 @@ export default function Header({
         <SubHeader SocialMediaLinks={socialMediaList} isMobileView={false} />
       </div>
 
-      <nav className="text-white w-full mt-[30px] relative px-[20px] md:px-[60px] py-[10px]">
+      <nav className="text-white w-full mt-[30px] relative px-[20px] md:px-[60px] py-[10px] z-20">
         <div className="mx-auto flex items-center justify-between py-[2px]">
           <Link href="/" className="flex items-center space-x-4">
             <Image src="/svg/logo.svg" alt="Logo" width={100} height={42} />

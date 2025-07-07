@@ -183,3 +183,102 @@ export const difference = [
         descriription : 'Manufactured by Landus, AcreEdge creates tailored programs fitting the needs of the Farmer of Tomorrow.',
     },
 ]
+
+export const carrer = [
+    {
+        title : "Benefits",
+        description : "Best employee benefits package in the industry."
+    },
+    {
+        title : "Community",
+        description : "Integral to our industry and success."
+    },
+    {
+        title : "Culture",
+        description : "Rural passion, family values, tech innovation, and support."
+    },
+    {
+        title : "Testimonials",
+        description : "Our employees have only amazing things to say."
+    },
+]
+
+
+export const updatesData = {
+  categories: ["News", "Podcasts", "Blogs", "Events"],
+  items: [
+    {
+      date: "20 May, 2025",
+      image: "Update1.png",
+      title: "Landus Excellence in Agriculture Scholarship Winners 2025",
+      category: "News"
+    },
+    {
+      date: "24 April, 2025",
+      image: "Update2.png",
+      title: "Iowa Innovation Puts Green Ammonia to the Test",
+      category: "News"
+    },
+    {
+      date: "16 April, 2025",
+      image: "Update3.png",
+      title: "SkyScout Gives Farmers Predictive Edge Through AI-Powered Aerial Insights",
+      category: "News"
+    },
+    {
+      date: "01 May, 2025",
+      image: "Update2.png",
+      title: "Grounded Growth: A Landus Podcast with AgTech Leaders",
+      category: "Podcasts"
+    },
+    {
+      date: "15 May, 2025",
+      image: "Update1.png",
+      title: "Voices from the Field: Episode 3",
+      category: "Podcasts"
+    },
+    {
+      date: "10 April, 2025",
+      image: "Update3.png",
+      title: "Feeding Innovation: Podcast Recap",
+      category: "Podcasts"
+    },
+    {
+      date: "05 May, 2025",
+      image: "Update3.png",
+      title: "How AI Is Changing Agribusiness Forever",
+      category: "Blogs"
+    },
+    {
+      date: "28 April, 2025",
+      image: "Update1.png",
+      title: "Building Sustainable Supply Chains",
+      category: "Blogs"
+    },
+    {
+      date: "18 April, 2025",
+      image: "Update2.png",
+      title: "The Future of Fertilizer: Tech and Trends",
+      category: "Blogs"
+    },
+    {
+      date: "22 May, 2025",
+      image: "Update1.png",
+      title: "Spring AgTech Expo 2025 Highlights",
+      category: "Events"
+    },
+    {
+      date: "12 May, 2025",
+      image: "Update2.png",
+      title: "Women in Agriculture Summit",
+      category: "Events"
+    },
+    {
+      date: "30 April, 2025",
+      image: "Update3.png",
+      title: "Landus Sustainability Showcase",
+      category: "Events"
+    }
+  ]
+};
+
