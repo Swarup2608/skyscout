@@ -282,3 +282,68 @@ export const updatesData = {
   ]
 };
 
+
+
+
+export const Commitments = [
+  {
+    title: 'LANDWERX',
+    desc: 'Empowers farmers with innovative, technology-driven solutions through curated partnerships.',
+    image: 'commitment1.png',
+  },
+  {
+    title: 'CropPWR',
+    desc: 'Enhances plant processes to improve quality and boost crop performance.',
+    image: 'commitment2.png',
+  },
+  {
+    title: 'Green Ammonia',
+    desc: 'Produces eco-friendly ammonia using water, air, and renewable energy.',
+    image: 'commitment3.png',
+  },
+  {
+    title: 'LANDWERX',
+    desc: 'Empowers farmers with innovative, technology-driven solutions through curated partnerships.',
+    image: 'commitment1.png',
+  },
+  {
+    title: 'CropPWR',
+    desc: 'Enhances plant processes to improve quality and boost crop performance.',
+    image: 'commitment2.png',
+  },
+  {
+    title: 'Green Ammonia',
+    desc: 'Produces eco-friendly ammonia using water, air, and renewable energy.',
+    image: 'commitment3.png',
+  },
+  {
+    title: 'LANDWERX',
+    desc: 'Empowers farmers with innovative, technology-driven solutions through curated partnerships.',
+    image: 'commitment1.png',
+  },
+  {
+    title: 'CropPWR',
+    desc: 'Enhances plant processes to improve quality and boost crop performance.',
+    image: 'commitment2.png',
+  },
+  {
+    title: 'Green Ammonia',
+    desc: 'Produces eco-friendly ammonia using water, air, and renewable energy.',
+    image: 'commitment3.png',
+  },
+  {
+    title: 'LANDWERX',
+    desc: 'Empowers farmers with innovative, technology-driven solutions through curated partnerships.',
+    image: 'commitment1.png',
+  },
+  {
+    title: 'CropPWR',
+    desc: 'Enhances plant processes to improve quality and boost crop performance.',
+    image: 'commitment2.png',
+  },
+  {
+    title: 'Green Ammonia',
+    desc: 'Produces eco-friendly ammonia using water, air, and renewable energy.',
+    image: 'commitment3.png',
+  },
+];
