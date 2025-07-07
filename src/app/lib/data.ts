@@ -1,4 +1,5 @@
 import { link } from "fs";
+import { title } from "process";
 
 export const promotionData = 'Announcing SkyScout - Precision Farming Insights for Smarter Farming Decisions'
 export const promotionLink = '/ClickMe'
@@ -100,4 +101,45 @@ export const Strengths = [
         image : 'SoyBean.jpg',
         link : '/'
     },
+]
+
+
+export const Facts =[
+    {
+        text : "1.5",
+        postText : "Million",
+        title : "Farmer Acres",
+        description : "Landus manages 1.5 million acres of farmland through its network of dedicated farmers."
+    },
+    {
+        text : "16",
+        postText : "",
+        title : "Countries",
+        description : "Landus extends its agricultural influence and operations to 16 different countries globally."
+    },
+    {
+        text : "2.4",
+        postText : "Billion",
+        title : "2023 FY Revenue",
+        description : "Landus achieved $2.4 billion in revenue during the fiscal year 2023."
+    },
+    {
+        text : "200",
+        postText : "Million",
+        title : "Infrastructure Investments",
+        description : "Landus has invested $200 million in infrastructure improvements over the last two years."
+    },
+    {
+        text : "34",
+        postText : "",
+        title : "States",
+        description : "Landus operates in 34 states, supporting farmers and agriculture nationwide."
+    },
+    {
+        text : "5.5",
+        postText : "Thousand",
+        title : "Farmer-Owners",
+        description : "Landus is owned and operated by a network of 5,500 farmer-members."
+    },
+
 ]

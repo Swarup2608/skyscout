@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Banner from "./ui/Banner/Banner";
-import { bannerItems, Strengths } from "./lib/data";
+import { bannerItems, Facts, Strengths } from "./lib/data";
 import WhoWeAre from "./ui/WhoWeAre/WhoWeAre";
 import OurStrengths from "./ui/OurStrengths/OurStrengths";
+import OurFacts from "./ui/OurFacts/OurFacts";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Banner bannerItems={bannerItems} />
       <WhoWeAre />
       <OurStrengths strengthsList={Strengths} />
+      <OurFacts FactsList={Facts} />
     </div>
   );
 }
