@@ -1,8 +1,6 @@
-// app/layout.tsx (Server Component — correct)
 import type { Metadata } from 'next';
 import './globals.css';
 import { inter, interTight } from '@/app/lib/font';
-import HeaderWrapper from './ui/Header/header'; // NEW component
 import { navItems, promotionData, promotionLink, SocialMediaLinks } from './lib/data';
 import Header from './ui/Header/header';
 import Footer from './ui/Footer/Footer';

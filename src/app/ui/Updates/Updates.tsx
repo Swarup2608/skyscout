@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { SubTitle, Title } from '../Title/Title';
 import UpdateCard from './UpdateCards';
 
+// Structure Type
 type ItemType = {
   date: string;
   image: string;
@@ -22,8 +23,10 @@ export default function UpdatesSection({
   const [activeCategory, setActiveCategory] = useState(categories[0]);
   const [viewAll, setViewAll] = useState(false);
 
-  // Filter logic: show all if viewAll is true
   const filteredItems = viewAll ? items : items.filter(item => item.category === activeCategory);
+  useEffect(()=>{
+    setActiveCategory(categories[0])
+  },[categories])
 
   return (
     <div className='bg-[#0D1219] lg:px-[60px] py-[80px] space-y-2 px-2'>
@@ -58,7 +61,7 @@ export default function UpdatesSection({
             key={idx}
             onClick={() => {
               setActiveCategory(category);
-              setViewAll(false); // Reset viewAll if a category is clicked
+              setViewAll(false); 
             }}
             className={`rounded-t px-[20px] w-full md:w-[134px] text-center py-[12px] text-[18px] cursor-pointer transition-all duration-300 ${
               category === activeCategory && !viewAll

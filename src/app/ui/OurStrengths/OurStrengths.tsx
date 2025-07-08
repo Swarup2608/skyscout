@@ -28,7 +28,7 @@ export default function OurStrengths({
   }, []);
 
   const handleCardClick = (index: number) => {
-    if (!isMobile) return; // skip on desktop
+    if (!isMobile) return; 
     setActiveCardIndex((prev) => (prev === index ? null : index));
   };
 

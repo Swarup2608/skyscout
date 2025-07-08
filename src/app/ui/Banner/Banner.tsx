@@ -11,7 +11,6 @@ type BannerItem = {
 
 export default function Banner({ bannerItems }: { bannerItems: BannerItem[] }) {
   const [current, setCurrent] = useState(0);
-
   return (
     <div className="relative w-screen h-screen overflow-hidden">
       {/* Preload all background slides, only show the active one */}
