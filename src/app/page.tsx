@@ -57,7 +57,12 @@ type FactListType = {
 }
 
 export default function Home() {
-  const [bannerItems, setBannerItems] = useState<BannerItem[]>([]);
+  const [bannerItems, setBannerItems] = useState<BannerItem[]>([{
+    title: '',
+    preTitle: '',
+    postTitle: '',
+    image: ''
+  }]);
   const [Commitments, setCommitments] = useState<CommitementType[]>([]);
   const [Strengths, setStrengths] = useState<StrengthStructure[]>([]);
   const [difference, setDifference] = useState<difflisttype[]>([]);
@@ -69,7 +74,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data"); 
+        const res = await fetch("/data");
         const data = await res.json();
         setBannerItems(data.bannerItems);
         setCommitments(data.Commitments);

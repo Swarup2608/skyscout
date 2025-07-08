@@ -51,17 +51,15 @@ function HeaderPromotion({
 
 // -------- Sub Header (Top Bar) --------
 function SubHeader({
-  SocialMediaLinks,
   isMobileView,
 }: {
-  SocialMediaLinks: SocialMediaItem[];
   isMobileView: Boolean;
 }) {
   return (
     <div
       className={`flex items-center justify-between px-4 py-2 gap-2 ${isMobileView ? "bg-white flex-col min-[1024px]:hidden" : "bg-[#0D1219] md:px-[60px] flex-col md:flex-row"}`}
     >
-      <SocialMedia socialMediaList={SocialMediaLinks} isMobileView={isMobileView} />
+      <SocialMedia isMobileView={isMobileView} />
       <div className="w-full flex flex-col lg:flex-row justify-end items-center gap-2 lg:gap-[32px] mt-2 sm:mt-0">
         <div className="relative flex items-center justify-center w-full max-w-xs">
           <input
@@ -96,17 +94,7 @@ function SubHeader({
 }
 
 // -------- Main Header --------
-export default function Header({
-  promotionData,
-  promotionLink,
-  socialMediaList,
-  navItems,
-}: {
-  promotionData: string;
-  promotionLink: string;
-  socialMediaList: SocialMediaItem[];
-  navItems: navItem[];
-}) {
+export default function Header() {
   const pathname = usePathname();
   const isPromotionVisible = pathname === "/";
   const [openMenu, setOpenMenu] = useState<string | null>(null);
@@ -114,6 +102,26 @@ export default function Header({
   const [drawerVisible, setDrawerVisible] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const drawerRef = useRef<HTMLDivElement>(null);
+  const [promotionData,setpromotionData] = useState('');
+  const [promotionLink,setpromotionLink] = useState('');
+  const [navItems,setnavItems] = useState<navItem[]>([])
+
+  useEffect(()=>{
+    const fetchData = async () => {
+      try {
+        const res = await fetch("/data");
+        const data = await res.json();
+        setpromotionData(data.promotionData);
+        setpromotionLink(data.promotionLink);
+        setnavItems(data.navItems)
+      } catch (err) {
+        console.error("Error fetching banner items", err);
+      }
+    };
+
+    fetchData();
+  },[])
+
 
   useEffect(() => {
     if (mobileOpen) {
@@ -147,7 +155,7 @@ export default function Header({
       />
 
       <div className="hidden lg:block">
-        <SubHeader SocialMediaLinks={socialMediaList} isMobileView={false} />
+        <SubHeader isMobileView={false} />
       </div>
 
       <nav className="text-white w-full mt-[30px] relative px-[20px] md:px-[60px] py-[10px] z-20">
@@ -222,7 +230,7 @@ export default function Header({
               </button>
 
               <div className="mt-6 space-y-5 text-sm">
-                <SubHeader SocialMediaLinks={socialMediaList} isMobileView={true} />
+                <SubHeader  isMobileView={true} />
                 {navItems?.map((item) => (
                   <div key={item.title}>
                     <div className="cursor-pointer font-semibold flex items-center gap-1">

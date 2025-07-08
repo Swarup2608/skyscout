@@ -11,7 +11,7 @@ import {
   difference,
   navItems,
   updatesData,
-} from "@/app/lib/data"; // Use @ if alias is configured, or adjust path
+} from "@/app/lib/data";
 
 export function GET() {
   return NextResponse.json({

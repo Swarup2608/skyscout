@@ -18,14 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${interTight.variable}`}>
       <body className={`${inter.className} antialiased`}>
-        <Header
-          promotionData={promotionData}
-          promotionLink={promotionLink}
-          socialMediaList={SocialMediaLinks}
-          navItems={navItems}
-        />
+        <Header />
         {children}
-        <Footer socialMediaList={SocialMediaLinks}/>
+        <Footer />
       </body>
     </html>
   );

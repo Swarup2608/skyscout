@@ -9,18 +9,10 @@ type SocialMediaItem = {
     Title: string;
 };
 
-export default function Footer(
-    {
-
-        socialMediaList
-    }: {
-
-        socialMediaList: SocialMediaItem[];
-    }
-) {
+export default function Footer() {
     return (
         <footer className="p-[10px] sm:p-[60px] sm:pb-0 bg-[#0D1219] ">
-            <FooterHeader socialMediaList={socialMediaList} />
+            <FooterHeader />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white pt-[48px] pb-[68px] gap-2">
                 <div className="flex flex-col gap-[12px]">
                     <h1 className="text-white text-[16px] font-semibold">Company</h1>

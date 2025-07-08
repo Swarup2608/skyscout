@@ -10,16 +10,7 @@ type SocialMediaItem = {
     Title: string;
 };
 
-export default function FooterHeader(
-    {
-
-        socialMediaList,
-    }
-        : {
-
-            socialMediaList: SocialMediaItem[];
-        }
-) {
+export default function FooterHeader() {
     return (
         <div className="flex items-center justify-between flex-col lg:flex-row border-b border-[#FFFFFF33] pb-[48px]">
             <div className="flex items-center justify-center gap-[18px] flex-col sm:flex-row max-sm:mb-4">
@@ -30,7 +21,7 @@ export default function FooterHeader(
                 <div className="bg-[#dedfe3b1] w-[0.4px] h-[32px] mt-[5px] max-sm:hidden"></div>
                 <div className="mt-[5px]">
 
-                <SocialMedia isMobileView={false} socialMediaList={socialMediaList} />
+                <SocialMedia isMobileView={false} />
                 </div>
             </div>
             <div className="flex items-center justify-center text-white gap-[18px]">
