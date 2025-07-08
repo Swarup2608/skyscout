@@ -28,7 +28,7 @@ export default function SocialMedia({
     };
 
     fetchData();
-  })
+  },[])
   return (
     <div className="flex items-start justify-center gap-3">
       {socialMediaList?.map((socialMedia, idx) => (
