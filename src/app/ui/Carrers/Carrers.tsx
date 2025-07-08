@@ -27,7 +27,7 @@ export default function Carrers({
             We're changing the way farmers live and work. At Landus, we understand that happy, fulfilled employees are the driving force behind our success in engaging with customers.
           </p>
           <div className="w-full md:w-[60%] mt-[40px]">
-            {CarrersList.map((carrer, idx) => (
+            {CarrersList?.map((carrer, idx) => (
               <div key={idx} className="pb-[12px] mb-[12px] border-b border-[#00000033]">
                 <h2 className="text-[20px] font-bold">{carrer.title}</h2>
                 <p className="text-[16px] font-light text-[#000000CC] mt-[8px]">

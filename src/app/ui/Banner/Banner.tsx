@@ -15,7 +15,7 @@ export default function Banner({ bannerItems }: { bannerItems: BannerItem[] }) {
     <div className="relative w-screen h-screen overflow-hidden">
       {/* Preload all background slides, only show the active one */}
       <div className="absolute inset-0 z-[-1]">
-        {bannerItems.map((item, index) => (
+        {bannerItems?.map((item, index) => (
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-700 ease-in-out
@@ -44,7 +44,7 @@ export default function Banner({ bannerItems }: { bannerItems: BannerItem[] }) {
 
         {/* Navigation Dots */}
         <div className="absolute bottom-6 right-[50px] flex gap-2">
-          {bannerItems.map((_, i) => (
+          {bannerItems?.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}

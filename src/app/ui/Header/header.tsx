@@ -159,7 +159,7 @@ export default function Header({
           {/* Desktop Nav hidden on 1024px and below */}
           <div className="hidden 2xl:flex items-center w-[90%] gap-5 justify-end" ref={dropdownRef}>
             <div className="flex items-center gap-5">
-              {navItems.map((item) => (
+              {navItems?.map((item) => (
                 <div key={item.title} className="relative">
                   <button
                     onClick={() => setOpenMenu(openMenu === item.title ? null : item.title)}
@@ -170,7 +170,7 @@ export default function Header({
                   </button>
                   {openMenu === item.title && (
                     <div className="absolute top-full left-0 bg-white text-black rounded shadow mt-2 z-10 animate-dropdown text-sm">
-                      {item.dropdown.map((option) => (
+                      {item.dropdown?.map((option) => (
                         <a key={option} href="#" className="block px-4 py-2 hover:bg-gray-100 whitespace-nowrap">
                           {option}
                         </a>
@@ -223,14 +223,14 @@ export default function Header({
 
               <div className="mt-6 space-y-5 text-sm">
                 <SubHeader SocialMediaLinks={socialMediaList} isMobileView={true} />
-                {navItems.map((item) => (
+                {navItems?.map((item) => (
                   <div key={item.title}>
                     <div className="cursor-pointer font-semibold flex items-center gap-1">
                       {item.title}
                       <Image src="/svg/dropdownArrow.svg" alt="Dropdown Arrow" className="invert-100" width={24} height={24} />
                     </div>
                     <ul className="pl-4 mt-1 space-y-1">
-                      {item.dropdown.map((option) => (
+                      {item.dropdown?.map((option) => (
                         <li key={option}>
                           <a href="#" className="text-sm block cursor-pointer">
                             {option}

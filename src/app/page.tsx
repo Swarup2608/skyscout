@@ -57,58 +57,13 @@ type FactListType = {
 }
 
 export default function Home() {
-  const [bannerItems, setBannerItems] = useState<BannerItem[]>([
-    {
-      title: '',
-      preTitle: '',
-      postTitle: '',
-      image: ''
-    }
-  ]);
-  const [Commitments, setCommitments] = useState<CommitementType[]>([
-    {
-      title: '',
-      desc: '',
-      image: '',
-    }
-  ]);
-  const [Strengths, setStrengths] = useState<StrengthStructure[]>([
-    {
-      title: '',
-      image: '',
-      description: '',
-      link: '',
-    }
-  ]);
-  const [difference, setDifference] = useState<difflisttype[]>([
-    {
-      title: '',
-      image: '',
-      descriription: '',
-    }
-  ]);
-  const [updatesData, setUpdatesData] = useState<ItemType[]>([
-    {
-      date: '',
-      image: '',
-      title: '',
-      category: '',
-    }
-  ]);
-  const [carrer, setCarrer] = useState<CarrersListType[]>([
-    {
-      title: '',
-      description: '',
-    }
-  ]);
-  const [Facts, setFacts] = useState<FactListType[]>([
-    {
-      text: '',
-      postText: '',
-      title: '',
-      description: ''
-    }
-  ]);
+  const [bannerItems, setBannerItems] = useState<BannerItem[]>([]);
+  const [Commitments, setCommitments] = useState<CommitementType[]>([]);
+  const [Strengths, setStrengths] = useState<StrengthStructure[]>([]);
+  const [difference, setDifference] = useState<difflisttype[]>([]);
+  const [updatesData, setUpdatesData] = useState<ItemType[]>([]);
+  const [carrer, setCarrer] = useState<CarrersListType[]>([]);
+  const [Facts, setFacts] = useState<FactListType[]>([]);
   const [catrgories, setCategories] = useState([])
 
   useEffect(() => {

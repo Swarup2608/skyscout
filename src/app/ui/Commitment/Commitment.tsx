@@ -84,7 +84,7 @@ export default function FeatureCarousel({ items }: { items: CommitementType[] })
           ref={scrollRef}
           className="flex overflow-x-auto gap-6 scroll-smooth hide-scrollbar snap-x snap-mandatory"
         >
-          {items.map((item, idx) => (
+          {items?.map((item, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 30 }}
@@ -118,7 +118,7 @@ export default function FeatureCarousel({ items }: { items: CommitementType[] })
         >
           {/* Pagination Dots */}
           <div className="flex space-x-2">
-            {Array.from({ length: totalPages }).map((_, idx) => (
+            {Array.from({ length: totalPages })?.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => goToPage(idx)}

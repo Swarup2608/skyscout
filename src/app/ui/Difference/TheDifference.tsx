@@ -31,7 +31,7 @@ export default function Difference({
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px] md:gap-[60px] mt-[60px]">
-        {differenceList.map((dif, idx) => (
+        {differenceList?.map((dif, idx) => (
           <div key={idx}>
             <NumbersCards
               PostText={''}

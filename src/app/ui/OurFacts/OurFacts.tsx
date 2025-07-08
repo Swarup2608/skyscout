@@ -35,7 +35,7 @@ export default function OurFacts(
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[60px] mt-[60px]">
                 {
-                    FactsList.map((facts,idx)=>(
+                    FactsList?.map((facts,idx)=>(
                         <div key={idx}>
                             <NumbersCards PostText={facts.postText} Title={facts.title} description={facts.description} image="" isDark={true} isNumbers={true} text={facts.text} />
                         </div>

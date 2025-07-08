@@ -56,7 +56,7 @@ export default function UpdatesSection({
 
       {/* Category Tabs */}
       <div className='border-b border-[#FFFFFF33] mt-[60px] flex items-center justify-start overflow-auto'>
-        {categories.map((category, idx) => (
+        {categories?.map((category, idx) => (
           <div
             key={idx}
             onClick={() => {
@@ -76,7 +76,7 @@ export default function UpdatesSection({
 
       {/* Filtered Cards */}
       <div className='mt-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[48px]'>
-        {filteredItems.map((item, idx) => (
+        {filteredItems?.map((item, idx) => (
           <UpdateCard
             key={idx}
             date={item.date}
