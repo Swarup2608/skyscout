@@ -17,7 +17,7 @@ export default function OurFacts(
     }
 ){
     return (
-        <div className="bg-[#0D1219] lg:px-[60px] py-[80px] space-y-2 px-2">
+        <div className="bg-[#0D1219] lg:px-[60px] py-[80px] space-y-2 px-[30px]">
             <Title title="QUICK FACTS" isDark={true} />
             <div className="flex items-center justify-between flex-col sm:flex-row">
                 <div className="w-full sm:w-[30%]">

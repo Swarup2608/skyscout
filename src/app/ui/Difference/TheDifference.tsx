@@ -13,7 +13,7 @@ export default function Difference({
   differenceList: difflisttype[]; 
 }) {
   return (
-    <div className="lg:px-[60px] py-[80px] space-y-2 px-2">
+    <div className="lg:px-[60px] py-[80px] space-y-2 px-[30px]">
       <Title title="THE DIFFERENCE" isDark={false} />
       <SubTitle
         isDark={false}

@@ -17,7 +17,7 @@ export default function ItemImageCombo({
     isLeft: boolean;
 }) {
     return (
-        <div className={`lg:px-[60px] py-[80px] space-y-2 flex px-[10] items-center justify-center ${isLeft ? 'flex-col lg:flex-row-reverse' : 'flex-col-reverse lg:flex-row'} gap-[50px] `}>
+        <div className={`lg:px-[60px] py-[80px] space-y-2 flex px-[30px] items-center justify-center ${isLeft ? 'flex-col lg:flex-row-reverse' : 'flex-col-reverse lg:flex-row'} gap-[50px] `}>
             {/* New stylable heading */}
 
             <div className="lg:w-[55%] w-[100%]">

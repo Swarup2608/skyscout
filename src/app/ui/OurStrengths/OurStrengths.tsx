@@ -33,7 +33,7 @@ export default function OurStrengths({
   };
 
   return (
-    <div className="bg-[#0D1219] lg:px-[60px] py-[80px] space-y-2 px-2">
+    <div className="bg-[#0D1219] lg:px-[60px] py-[80px] space-y-2 px-[30px]">
       <Title isDark={true} title="OUR STRENGTHS" />
       <SubTitle
         isDark={true}

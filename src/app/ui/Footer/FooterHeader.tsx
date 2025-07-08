@@ -3,12 +3,7 @@ import Link from "next/link";
 import SocialMedia from "../SocialMedia/SocialMedia";
 
 
-// ------------- Structures ---------------
-type SocialMediaItem = {
-    Icon: string;
-    Link: string;
-    Title: string;
-};
+
 
 export default function FooterHeader() {
     return (

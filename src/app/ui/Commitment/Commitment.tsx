@@ -61,7 +61,7 @@ export default function FeatureCarousel({ items }: { items: CommitementType[] })
   };
 
   return (
-    <div className="lg:px-[60px] py-[80px] space-y-2 px-2">
+    <div className="lg:px-[60px] py-[80px] space-y-2 px-[30px]">
       <Title title="OUR COMMITMENT" isDark={false} />
       <SubTitle
         isDark={false}
@@ -82,7 +82,7 @@ export default function FeatureCarousel({ items }: { items: CommitementType[] })
         {/* Scrollable Cards */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto gap-6 scroll-smooth hide-scrollbar snap-x snap-mandatory"
+          className="flex overflow-x-auto gap-6 scroll-smooth hide-scrollbar snap-x snap-mandatory overflow-y-hidden"
         >
           {items?.map((item, idx) => (
             <motion.div
@@ -117,7 +117,7 @@ export default function FeatureCarousel({ items }: { items: CommitementType[] })
           className="flex justify-between items-center mt-[60px]"
         >
           {/* Pagination Dots */}
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 max-sm:hidden">
             {Array.from({ length: totalPages })?.map((_, idx) => (
               <button
                 key={idx}

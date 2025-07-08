@@ -2,12 +2,6 @@ import Link from "next/link";
 import FooterHeader from "./FooterHeader";
 import Image from "next/image";
 
-// ------------- Structures ---------------
-type SocialMediaItem = {
-    Icon: string;
-    Link: string;
-    Title: string;
-};
 
 export default function Footer() {
     return (

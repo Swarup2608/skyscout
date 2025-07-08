@@ -6,12 +6,6 @@ import { usePathname } from "next/navigation";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import { useEffect, useRef, useState } from "react";
 
-// ------------- Structures ---------------
-type SocialMediaItem = {
-  Icon: string;
-  Link: string;
-  Title: string;
-};
 type navItem = {
   title: string;
   dropdown: string[];
