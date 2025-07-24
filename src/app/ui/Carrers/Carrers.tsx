@@ -44,7 +44,7 @@ export default function Carrers({
         <div
           className="md:w-[528px] md:h-[548px] w-full h-full min-w-[300px] min-h-[300px] bg-cover bg-no-repeat rounded-md"
           style={{
-            backgroundImage: `url('/images/Carrers.png')`,
+            backgroundImage: `url('/images/carrers.png')`,
             backgroundPosition: `-150px center`,
           }}
         />
