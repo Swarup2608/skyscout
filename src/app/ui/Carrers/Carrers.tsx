@@ -24,8 +24,9 @@ export default function Carrers({
       data={
         <div className="mt-[40px]">
           <p className="text-[#000000CC] text-[16px] font-light">
-            We're changing the way farmers live and work. At Landus, we understand that happy, fulfilled employees are the driving force behind our success in engaging with customers.
+            We&#39;re changing the way farmers live and work. At Landus, we understand that happy, fulfilled employees are the driving force behind our success in engaging with customers.
           </p>
+
           <div className="w-full md:w-[60%] mt-[40px]">
             {CarrersList?.map((carrer, idx) => (
               <div key={idx} className="pb-[12px] mb-[12px] border-b border-[#00000033]">
@@ -44,7 +45,7 @@ export default function Carrers({
           className="md:w-[528px] md:h-[548px] w-full h-full min-w-[300px] min-h-[300px] bg-cover bg-no-repeat rounded-md"
           style={{
             backgroundImage: `url('/images/Carrers.png')`,
-            backgroundPosition: `-150px center`, 
+            backgroundPosition: `-150px center`,
           }}
         />
       }

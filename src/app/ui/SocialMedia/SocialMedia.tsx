@@ -13,7 +13,7 @@ type SocialMediaItem = {
 export default function SocialMedia({
   isMobileView,
 }: {
-  isMobileView: Boolean;
+  isMobileView: boolean;
 }) {
   const [socialMediaList, setsocialMediaList] = useState<SocialMediaItem[]>([])
   useEffect(() => {

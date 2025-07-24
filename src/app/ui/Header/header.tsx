@@ -47,7 +47,7 @@ function HeaderPromotion({
 function SubHeader({
   isMobileView,
 }: {
-  isMobileView: Boolean;
+  isMobileView: boolean;
 }) {
   return (
     <div

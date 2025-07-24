@@ -139,7 +139,7 @@ export default function FeatureCarousel({ items }: { items: CommitementType[] })
               onClick={() => scroll('left')}
               className="cursor-pointer transition-opacity"
             >
-              <img
+              <Image
                 src={
                   currentPage === 0
                     ? '/svg/arrow-left.svg'

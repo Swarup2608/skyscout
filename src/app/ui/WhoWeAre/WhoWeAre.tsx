@@ -25,11 +25,11 @@ export default function WhoWeAre() {
                 images={
                     <div className="flex items-center gap-3 flex-col md:flex-row">
                         <div className="w-full md:w-[240px] h-[300px] md:h-[480px] object-cover">
-                            <img src='/images/whoweare-1.jpg' alt="Who we Are 1" className="object-cover object-center w-full h-full" />
+                            <Image src='/images/whoweare-1.jpg' alt="Who we Are 1" className="object-cover object-center w-full h-full" />
                         </div>
                         
                         <div className="w-full md:w-[240px] h-[300px] md:h-[480px] mt-0 md:mt-[-100px]">
-                            <img src='/images/whoweare-2.jpg' alt="Who we Are 1" className="object-cover object-center w-full h-full" />
+                            <Image src='/images/whoweare-2.jpg' alt="Who we Are 1" className="object-cover object-center w-full h-full" />
                         </div>
                     </div>
                 }
