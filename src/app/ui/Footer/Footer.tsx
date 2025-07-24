@@ -171,7 +171,7 @@ export default function Footer() {
                         <Image src='/svg/appStore.svg' alt="App Store" width={125} height={38} />
                     </Link>
                     <Link href={'/'} className="text-[11px] font-[500] text-[#B2B2B2]">
-                        <Image src='/svg/playstore.svg' alt="App Store" width={125} height={38} />
+                        <Image src='/svg/playStore.svg' alt="App Store" width={125} height={38} />
                     </Link>
                     
                 </div>
