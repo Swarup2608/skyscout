@@ -12,7 +12,7 @@ type BannerItem = {
 export default function Banner({ bannerItems }: { bannerItems: BannerItem[] }) {
   const [current, setCurrent] = useState(0);
   return (
-    <div className="relative w-screen h-screen overflow-hidden">
+    <div className="relative w-screen h-screen overflow-hidden max-sm:pt-[150px] max-sm:pb-3">
       {/* Preload all background slides, only show the active one */}
       <div className="absolute inset-0 z-[-1]">
         {bannerItems?.map((item, index) => (
